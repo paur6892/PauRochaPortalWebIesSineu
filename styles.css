@@ -124,7 +124,7 @@ body{
   background-image: 
     linear-gradient(rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.171)),
     linear-gradient(180deg, #30000c5d 0%, #290003d2 20%, #29000ad7 85%, #33003846 100%),
-    url('../IMG/iessineufora.jpg');
+    url('iessineufora.jpg');
   background-size:cover;
   background-position:center;
   filter:contrast(0.95);
@@ -577,3 +577,4 @@ a:focus{ outline:3px solid rgba(43,108,176,0.18); outline-offset:2px; border-rad
   max-width: 600px;
   margin: 0 auto;
 }
+
