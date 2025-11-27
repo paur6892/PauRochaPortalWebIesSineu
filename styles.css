@@ -50,6 +50,7 @@ body{
     top: 0;
     z-index: 50;
     padding: 0.5rem 0;
+    border-radius: 10px;
 }
 .header-inner{
     display:flex;
@@ -123,7 +124,7 @@ body{
   background-image: 
     linear-gradient(rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.171)),
     linear-gradient(180deg, #30000c5d 0%, #290003d2 20%, #29000ad7 85%, #33003846 100%),
-    url('iessineufora.jpg');
+    url('../IMG/iessineufora.jpg');
   background-size:cover;
   background-position:center;
   filter:contrast(0.95);
@@ -550,15 +551,16 @@ a:focus{ outline:3px solid rgba(43,108,176,0.18); outline-offset:2px; border-rad
 }
 
 .fondoabout {
-  background-color: #f0f0f00c;
-  padding: 20px;
-  width: 80%;
-  display: flex; 
-  justify-content: center;
+  position: relative;
+  min-height: 360px;
+  margin: 1.5rem auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
   align-items: center;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.068);
+  width: calc(100% - 2rem);
+  max-width: var(--max-width);
+  box-shadow: #00000033 0px 4px 8px, #00000024 0px 18px 36px, #0000001F 0px 48px 96px;
 }
 .containercontacte {
   width:calc(100% - 2rem);
@@ -574,5 +576,4 @@ a:focus{ outline:3px solid rgba(43,108,176,0.18); outline-offset:2px; border-rad
   box-shadow: var(--shadow);
   max-width: 600px;
   margin: 0 auto;
-
 }
